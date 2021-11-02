@@ -4,6 +4,7 @@ html {
 body{
     margin: auto;
     padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 header{
     text-align: center;
@@ -17,7 +18,7 @@ header > h1,h2,h4{
     font-family: Arial, Helvetica, sans-serif;
 }
 header > p{
-    font-family: Georgia;
+    font-family: 'Times New Roman', Times, serif;
 }
 header > div{
     color: rgb(228, 228, 228);
@@ -35,6 +36,7 @@ nav{
     display: flex;
     flex-direction: row;
     justify-content: center;
+    flex-wrap: wrap;
 }
 nav > a{
     transition: 0.2s;
@@ -56,11 +58,11 @@ section{
 section + section{
     margin-top: 10px;
 }
-section p{
-    padding: 0px 5px 0px 5px;
+table{
+    border-collapse: collapse;
 }
 td{
-    padding: 5px;
+    padding: 5px 10px 5px 0px;
 }
 strong{
     font-family: Arial, Helvetica, sans-serif;
@@ -71,16 +73,22 @@ strong{
     flex-direction: row;
     margin: 0px;
     justify-content: space-between;
+    flex-wrap: wrap;
+    column-gap: 1%; /* définit l'espace entre les colonne d'un élément */
 }
 .projet{
     padding: 0px;
     flex: 1;
-    flex-wrap: wrap;
+    min-width: 400px;
 }
 .projet p{
     padding: 0;
     text-align: justify;
 }
-.projet+.projet{
-    margin-left: 20px;
+footer{
+    padding: 3px;
+    text-align: center;
+    background-color: rgb(37, 37, 37);
+    color:rgb(114, 114, 114);
+    font-family: Arial, Helvetica, sans-serif;
 }
