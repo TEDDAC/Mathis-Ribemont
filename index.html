@@ -4,6 +4,33 @@
         <meta charset="utf-8"/>
         <title>Mathis Ribémont</title>
         <link rel="stylesheet" href="style.css">
+        <!--<script>
+            const threshold = .1
+            const options = {
+            root: null,
+            rootMargin: '0px',
+            threshold
+            }
+
+            const handleIntersect = function (entries, observer) {
+            entries.forEach(function (entry) {
+                if (entry.intersectionRatio > threshold) {
+                entry.target.classList.remove('reveal')
+                observer.unobserve(entry.target)
+                }
+            })
+            }
+
+            document.documentElement.classList.add('reveal-loaded')
+
+            window.addEventListener("DOMContentLoaded", function () {
+            const observer = new IntersectionObserver(handleIntersect, options)
+            const targets = document.querySelectorAll('.reveal')
+            targets.forEach(function (target) {
+                observer.observe(target)
+            })
+            })
+        </script>-->
     </head>
     <body>
         <header> <!-- fond noise animé -->
@@ -34,7 +61,7 @@
                 <a href="#projets">Projets</a>
             </nav>-->
         </header>
-        <section id="contact">
+        <section id="contact" class="reveal">
             <h2>Information diverse</h2>
             <p>Adresse: Lieu Dit Le Maupas - 03500 - Contigny<br>
             Téléphone: 07.86.01.24.66<br>
@@ -43,7 +70,7 @@
             Né le 9 Janvier 2002
             </p>
         </section>
-        <section id="formations">
+        <section id="formations" class="reveal">
             <h2>Formations</h2>
             <table id="tabformation">
                 <tr>
@@ -64,7 +91,7 @@
                 </tr>
             </table>
         </section>
-        <section id="competences">
+        <section id="competences" class="reveal">
             <h2>Compétences</h2>
             <div style="display: flex; flex-direction: row; flex-wrap: wrap; column-gap: 10px;">
                 <div>
@@ -87,7 +114,7 @@
                 </div>
             </div>
         </section>
-        <section id="projets">
+        <section id="projets" class="reveal">
             <h2 style="margin-bottom: 0px;">Projets</h2>
             <div class="projets-conteneur">
                 <article class="projet">
@@ -101,12 +128,12 @@
                 </article>
                 <article class="projet">
                     <h4>Compiler linux</h4>
-                    <img src="img/tux.svg" alt="Image de Tux" title="Tux" style="float: left; height: 100px; margin: 0 10px 0 0;">
+                    <img src="img/tux.svg" alt="Image de Tux" title="Tux" style="float: left; height: 100px; margin: 0 10px 0 0; width: 5vw;">
                     <p>A ma rentrée de terminal, j’ai commencé à apprendre à utiliser le système d’exploitation GNU/Linux. J’ai donc dû aller chercher des documentations et autres tutoriels pour en apprendre et en comprendre le fonctionnement. J’ai aussi, durant ma première année, essayer de compiler le noyaux linux, et de construire un système très basique, dans lequel j’avais les commandes de base. J’ai donc dû développer mon autonomie, car la compilation du noyau soulève beaucoup de problème, dont les solutions peuvent être difficile à trouver.</p>
                 </article>
             </div>
         </section>
-        <section>
+        <section class="reveal">
             <h2>Autres Centres d'Intérêt</h2>
             <p>Parapente: Vol en autonomie depuis 2019, une soixantaine de vols à mon actif.</p>
             <p>Musique: 3 ans de basse, 3 ans de piano, je compose de la musique electronique sur ordinateur depuis 5 ans, sur le logiciel FL Studio.</p>

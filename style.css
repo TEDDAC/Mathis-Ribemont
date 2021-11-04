@@ -2,10 +2,13 @@
     font-family: monoExtraBold;
     src: url(fonts/JetBrainsMonoNL-ExtraBold.ttf);
 }
-
 @font-face {
     font-family: monoLight;
     src: url(fonts/JetBrainsMono-Light.ttf);
+}
+@font-face {
+    font-family: monoJB;
+    src: url(fonts/JetBrainsMono-Regular.ttf);
 }
 
 html {
@@ -14,6 +17,18 @@ html {
 body{
     margin: auto;
     font-family: Arial, Helvetica, sans-serif;
+    --background-color: rgb(59, 59, 59);
+    --text-color: rgb(228, 228, 228);
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: monoJB;
+    font-size: 1vw;
+}
+h2{
+    font-size: 3vw;
+}
+a{
+    color: var(--text-color);
 }
 header{
     --header-color: rgb(228, 228, 228);
@@ -108,7 +123,26 @@ nav > a:hover{
 }
 section{
     padding: 0 2% 0; /*Haut, horizontal, bas*/
+    transition: 0.3s;
 }
+section:hover{
+    border-left: solid 1vh var(--text-color);
+    transition: 0.3s;
+    margin-left: 2vh;
+}
+/*.reveal-loaded{
+    animation: arriver 1s;
+}
+
+@keyframes arriver {
+    from{margin-left: 8vh;
+    opacity: 0%;}
+    to{
+        margin-left: 0vh;
+        opacity: 100%;
+    }
+}*/
+
 section + section{
     margin-top: 10px;
 }
