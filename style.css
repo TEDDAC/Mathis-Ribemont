@@ -77,7 +77,7 @@ strong{
     column-gap: 1%; /* définit l'espace entre les colonne d'un élément */
 }
 .projet{
-    padding: 0px;
+    padding: 10px;
     flex: 1;
     min-width: 400px;
 }
